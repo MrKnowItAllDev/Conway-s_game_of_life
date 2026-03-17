@@ -34,19 +34,6 @@ function updateCell(grid, i, j) {
     return 0;
 }
 
-function setPopulation(grid, neighbors) {
-    let n = neighbors.map((n) => grid[n[0]][n[1]]).filter((i) => i).length;
-    return n >= 2 && n <= 3;
-}
-
-function underPopulated(grid, neighbors) {
-    return neighbors.map((n) => grid[n[0]][n[1]]).filter((i) => i).length < 2;
-}
-
-function overPopulated(grid, neighbors) {
-    return neighbors.map((n) => grid[n[0]][n[1]]).filter((i) => i).length > 3;
-}
-
 class UI {
     static #container = () => document.querySelector('#container');
     static #cells = () => document.querySelectorAll('.grid');
