@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: fit-content;
+}
+
+.epoch-info {
+    padding: 2px 20px;
+}
+
+.grid {
+    width: 10px;
+    height: 10px;
+    /*border: 1px solid #000000;*/
+}
