@@ -6,7 +6,7 @@ function board(rows, cols) {
     let arr = [];
     for (let i = 0; i < rows; i++) {
         let r = [];
-        for (let j = 0; j < cols; j++) r.push(0);
+        for (let j = 0; j < cols; j++) r[j] = 0;
         arr.push(r);
     }
     return arr;
