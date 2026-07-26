@@ -134,4 +134,4 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-UI.init(100, 100);
+UI.init(50, 50);
