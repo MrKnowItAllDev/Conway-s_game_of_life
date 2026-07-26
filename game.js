@@ -26,8 +26,7 @@ function updateCell(grid, i, j) {
     let aliveNeighbors= neighbors.map((n) => grid[n[0]][n[1]]).filter((i) => i).length;
 
     if (grid[i][j] === 1) {
-        if (aliveNeighbors < 2) return 0;
-        if (aliveNeighbors > 3) return 0;
+        if (aliveNeighbors < 2 || aliveNeighbors > 3) return 0;
         return 1;
     }
     if (aliveNeighbors === 3) return 1;
